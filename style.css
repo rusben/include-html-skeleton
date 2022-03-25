@@ -1,0 +1,64 @@
+/* Declaring custom properties */
+* {
+  box-sizing: border-box;
+  border: thin solid red;
+}
+
+.header {
+  background-color: black;
+  text-align: right;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.header > ul {
+  margin: 0;
+  list-style-type: none;
+  color: white;
+}
+.header > ul > li { display: inline-block;}
+
+.menu {
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: right;
+}
+
+.menu > ul {
+  margin: 0;
+  list-style-type: none;
+}
+.menu > ul > li {
+  padding: 1em;
+  display: inline-block;
+}
+
+.logo { float: left; }
+
+.banner {
+  position: relative;
+}
+
+/* clearfix */
+.banner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-text {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+
+}
